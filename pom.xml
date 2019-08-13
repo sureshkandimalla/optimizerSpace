@@ -3,4 +3,134 @@
   <groupId>com.aa.rpt.cas</groupId>
   <artifactId>Casper_rtpnr-gigaspace-pu</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		
+	</properties>
+	
+	
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.4.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	
+
+	
+		<repositories>
+		<repository>
+			<id>aaInternal</id>
+			<url>https://artifacts.aa.com/artifactory/maven-public</url>
+		</repository>
+		<repository>
+			<id>org.openspaces</id>
+			<url>http://maven-repository.openspaces.org</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>aaInternal</id>
+			<url>https://artifacts.aa.com/artifactory/maven-public</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<url>https://artifacts.aa.com/artifactory/dev-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>https://artifacts.aa.com/artifactory/snapshots/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+	
+	<dependencies>
+	
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.9</version>
+		</dependency>
+	<dependency>
+			<groupId>org.gigaspaces</groupId>
+			<artifactId>xap-openspaces</artifactId>
+			<version>14.5.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.atomikos</groupId>
+					<artifactId>transactions-jta</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+  
+  <build>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources/META-INF/spring</directory>
+				<includes>
+					<include>*.properties</include>
+					<include>*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source />
+					<target />
+				</configuration>
+			</plugin>
+			<plugin>
+            <artifactId>maven-resources-plugin</artifactId>            
+            <executions>
+                <execution>
+                    <id>copy-resources</id>
+                    <phase>validate</phase>
+                    <goals>
+                        <goal>copy-resources</goal>
+                    </goals>
+                    <configuration>
+                        <outputDirectory>${basedir}/target/META-INF/spring/</outputDirectory>
+                        <resources>
+                            <resource>
+                                <directory>src/main/resources/META-INF/spring/</directory>
+                                <filtering>false</filtering>
+                            </resource>
+                        </resources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+			
+		</plugins>
+	</build>
 </project>
