@@ -1,13 +1,2 @@
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\FlightNbrRange.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\SegClassChange.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\PNRSegment.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\Station.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\FlightNbrRangeId.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\PNRSegmentId.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\StatusCode.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\FareClass.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\StationTimeZone.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\StationTimeZonePrimaryKey.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\util\SeqConverter.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\SegClassChangeId.java
-C:\Users\785570\git\Casper_rtpnr-gigaspace-pu\src\main\java\com\aa\rpt\cas\rtpnr\space\LoyaltyLevel.java
+C:\workspace\Samples\GS\OptimizerSpace\src\main\java\com\aa\rpt\herc\util\SeqConverter.java
+C:\workspace\Samples\GS\OptimizerSpace\src\main\java\com\aa\rpt\herc\domain\space\Station.java

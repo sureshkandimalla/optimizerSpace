@@ -1,13 +1,2 @@
-com\aa\rpt\cas\rtpnr\space\StationTimeZonePrimaryKey.class
-com\aa\rpt\cas\rtpnr\space\FlightNbrRange.class
-com\aa\rpt\cas\rtpnr\space\FlightNbrRangeId.class
-com\aa\rpt\cas\rtpnr\space\SegClassChangeId.class
-com\aa\rpt\cas\rtpnr\space\PNRSegment.class
-com\aa\rpt\cas\rtpnr\space\FareClass.class
-com\aa\rpt\cas\rtpnr\space\StationTimeZone.class
-com\aa\rpt\cas\rtpnr\space\PNRSegmentId.class
-com\aa\rpt\cas\rtpnr\space\StatusCode.class
-com\aa\rpt\cas\rtpnr\space\LoyaltyLevel.class
-com\aa\rpt\cas\util\SeqConverter.class
-com\aa\rpt\cas\rtpnr\space\SegClassChange.class
-com\aa\rpt\cas\rtpnr\space\Station.class
+com\aa\rpt\herc\domain\space\Station.class
+com\aa\rpt\herc\util\SeqConverter.class
